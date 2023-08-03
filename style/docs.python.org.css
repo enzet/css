@@ -1,0 +1,36 @@
+div.highlight span.copybutton {
+  border: none !important; padding-right: 7px !important; color: #888 !important;
+  font-family: "Iosevka Custom Extended", "JetBrains Mono", monospace !important;
+}
+div.body a {color: darkblue;}
+span.pre, code {
+    font-family: "Iosevka Custom Extended", "JetBrains Mono", monospace;
+}
+div.body pre {
+    border: none; padding: 15px; border-radius: 10px;
+    font-family: "Iosevka Custom Extended", "JetBrains Mono", monospace;
+    background-color: #EEE;
+}
+table.docutils tr th {background-color: transparent;}
+table.docutils {border: none; border-top: 0.5px solid black;}
+table.docutils td, table.docutils th {
+    border: none !important;
+    border-bottom: 0.5px solid black !important;
+}
+div.sphinxsidebar {background-color: transparent;}
+div#sidebarbutton {background-color: transparent;}
+
+pre, code {
+    .c, .c1, .cm {color: #080 !important;} /* Comments. */
+    .cp {color: #960 !important;} /* Directive. */
+    .cpf {color: #640 !important;} /* Directive. */
+    .p {color: grey !important;} /* Symbols. */
+    .k, .kd, .kt, .kc, .kn, .bp {color: darkblue !important;}} /* Keywords. */
+    .nf, .nc {color: #000 !important;}
+    .nd {color: #880 !important;}
+    .nb {color: darkblue !important;}
+    .mi {color: #800 !important;} /* Constants. */
+    .s, .sc {color: #800 !important;} /* Constants. */
+    .s1, .s2, .si, .sa {color: #080 !important; font-style: italic;} /* String constants. */
+    .se {color: #808 !important;
+}
