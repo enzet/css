@@ -10,7 +10,7 @@
 /*
  * Make personal avatar image round as others. It seems to be more consistent.
  */ 
-img.account-avatar {border-radius: 50px;}
+img.account-avatar, button.squircle {border-radius: 50px;}
 
 /* Use black, dark gray, and gray as a accent colors. */
 .content-rich a {color: #888;}
