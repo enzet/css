@@ -1,0 +1,290 @@
+/*
+ * This is custom CSS for Wikipedia skin Vector 2022.
+ *
+ * It uses custom locally created font Iosevka Extended and Inter font, so
+ * change it if you want to use this CSS on your system.
+ *
+ * Author: Sergey Vartanov (me@enzet.ru).
+ */
+
+#Timeline-row a {color: black; font-weight: normal;}
+#Timeline-row div div {background-color: black !important; border-radius: 7px;}
+
+/* Remove background from images. */
+.mw-file-element {background: transparent !important;}
+
+/* Replace `^` with `↑`. */
+span.mw-cite-backlink b a::after {content: "↑"; font-size: 10pt;}
+span.mw-cite-backlink b a {font-weight: normal; font-size: 0px;}
+span.mw-cite-backlink {font-weight: normal; font-size: 0px;}
+span.mw-cite-backlink a sup i b {font-weight: normal; font-size: 9pt;}
+span.mw-cite-backlink a sup i b::after {content: " ";}
+
+a:visited {color: #06C;}
+
+/* (!) Rewrite links. *
+a.external {background-image: none !important; padding-right: 0 !important;}
+a {color: inherit; border-bottom: 0.1px solid black;}
+.reference a, .mw-editsection a, .ext-phonos a, .mw-cite-backlink a {border: none;}
+a.external.text {border-bottom: none;}
+a:visited {color: inherit;}
+a:hover {color: grey; text-decoration: none;} */
+
+/* READER MODE */
+.vector-page-toolbar-container {display: none;}
+.vector-user-links {display: none;}
+/* .cdx-button {display: none;} */
+.vector-toc-landmark {display: none !important;}
+.new {color: inherit !important;} /* Don't show red links. */
+.vector-page-titlebar::after {background-color: #DDD;}
+.vector-header * {visibility: hidden;}
+.vector-header:hover * {visibility: visible;}
+
+/*div.mw-parser-output > p {font-size: 13pt;}*/ /* Increase the main font a little bit. */
+table {font-size: 11pt;}
+* {line-height: 1.5;} /* Slightly reduce the line height. */
+body {font-family: "Inter";}
+
+/* Make headers borderless, bold and sans. */
+h1, h2 {font-family: "Inter Black" !important; font-weight: bold;}
+.mw-heading {
+    font-family: "Inter" !important; font-weight: bold;
+    border: none;
+}
+h1 {font-weight: Black; font-size: 300% !important;} /* Black title. */
+h1, h1 * {line-height: 1.3 !important;} /* Black title. */
+#p-lang-btn {margin-left: 30px;}
+
+/* Change monospaced font and color scheme for source code snippets. */
+pre {border: none; border-radius: 10px; font-family: "Iosevka Custom"; font-stretch: expanded;}
+code {border: none; font-family: "Iosevka Custom"; font-stretch: expanded;}
+pre, code {
+    .c, .c1, .cm {color: #080 !important;} /* Comments. */
+    .cp {color: #960 !important;} /* Directive. */
+    .cpf {color: #640 !important;} /* Directive. */
+    .p {color: grey !important;} /* Symbols. */
+    .k, .kd, .kt, .kc, .kn {color: darkblue !important;} /* Keywords. */
+    .nf, .nc, .nx {color: #880 !important;}
+    .nb {color: darkblue !important;}
+    .mi, .s, .sc, .s2 {color: #800 !important;} /* Constants. */
+    .se {color: #808 !important;}
+}
+
+/* Sidebar. */
+
+.navbox-subgroup .navbox-title, .navbox-group {
+    background-color: #F4F4EC !important;
+}
+.navbox-abovebelow {background-color: #F4F4EC !important;}
+.sidebar-list-title {
+    background-color: transparent !important;
+}
+.sidebar, .infobox, .side-box, .navbox, .portalbox {
+    border: none !important; border-radius: 10px;
+}
+.infobox, .portalbox {
+    padding: 7pt !important; background-color: #F4F4F4 !important;
+}
+.infobox-header, .infobox-subheader, .infobox-header div, .infobox-above {
+    background: none !important; border-radius: 5px; border-top: none !important;
+}
+.sidebar {margin: 0.5em 0 2em 2em !important;}
+.infobox tbody tr th, .infobox tbody tr {background: none !important;}
+.ib-country td, .ib-country th {background-color: white;}
+.infobox-image {padding-top: 10px !important; padding-bottom: 10px !important;}
+.infobox tr td {padding-top: 2px; padding-bottom: 2px; color: black !important;}
+.infobox tr th {padding-top: 2px; padding-bottom: 2px; color: black !important;}
+div.legend {margin: 5px;}
+.infobox img {margin-bottom: 7px; border-radius: 10px;}
+
+.vector-page-titlebar {box-shadow: none;}
+
+/* Make "edit" button visible only on hover. */
+.mw-editsection * {color: white;}
+.mw-editsection-bracket {display: none;}
+.mw-editsection:hover * {color: inherit; text-decoration: none;}
+
+/* Make thumb images rounded, with small grey annotations. */
+figure {border: none !important; background: none !important;}
+div.thumb {border: none !important;}
+div.thumbcaption {padding: 10px 0px 15px 0px;}
+figure a img, video {
+    border: none !important;
+    border-radius: 10px;
+}
+figure {
+    border: none;
+    background: none;
+    padding: 0px;
+}
+figcaption {
+    background: none !important;
+    border: none !important;
+    padding: 0px !important;
+    padding-top: 10px !important;
+    color: grey !important;
+}
+figure a::after {display: none;}
+.mw-content-ltr figure {display: non;} /* On can click on an image to magnify it. */
+.infobox-image img {border-radius: 10px;}
+span.flagicon img {border-radius: 4px;}
+.mw-hiero-table img {border-radius: 0px;}
+
+/* Side -> Minimaps. */
+.thumbinner {border: none !important; padding: 0 !important; background: none !important; color: grey;}
+/* .thumbinner div {border: none !important;} -- This breaks pie diagrams. */
+
+/* Do the same for the galleries. */
+div.gallerytext {color: grey;}
+div.gallerytext p {font-size: 100%}
+
+div.thumbimage {border: none; background: none;}
+.quotebox {
+    border: none !important;
+    background-color: #EEE !important;
+    border-radius: 10px;
+}
+div.thumb img, .sidebar-image img {border-radius: 10px;}
+
+/*
+ * Hide boxes.
+ *
+ * (!) Warning: this will improve readability of articles but hide important
+ * notes on how to improve Wikipedia. Remove `display: none;` to see them.
+ */
+/*.box-Unreferenced_section, .box-More_citations_needed,
+.box-More_citations_needed_section, .box-Update, .box-One_source,
+.box-No_footnotes, .box-More_footnotes, .box-Multiple_issues,
+.box-Expand_section, .box-BLP_sources, .box-Original_research*/
+.ambox {
+    display: none;
+    border: none !important;
+    border-radius: 10px;
+    color: grey;
+}
+.stub {display: none;}
+
+/* Sidebox is also borderless and rounded. */
+.mw-parser-output .unsolved {border: none; border-radius: 10px;}
+
+/*
+ * Clean up tables. 0.5 pixels looks good on Retina displays but may be a mess
+ * on others.
+ */
+.wikitable > tr > th, .wikitable > tr > td,
+.wikitable > * > tr > th, .wikitable > * > tr > td {
+    border: 0px;
+    border-bottom: 0.5px solid #000;
+    background-color: white;
+    padding: 5pt 7pt;
+}
+.wikitable {border: none; border-top: 0.5px solid #000;}
+/* Other tables. */
+table.floatright > tr > th, table.floatright > tr > td,
+table.floatright > * > tr > th, table.floatright > * > tr > td {
+    border: 0px;
+    border-bottom: 0.5px solid #000;
+    background-color: white;
+    padding: 5pt 7pt;
+}
+table.floatright {border: none; border-top: 0.5px solid #000; border-collapse: collapse;}
+table.floatright {margin-left: 20px; margin-bottom: 20px; margin-top: 20px;}
+
+/* Cleanup categories: remove color and borders, and make in smaller. */
+.catlinks {border: none; padding: 0px; font-size: 75%; background-color: white;}
+
+/* Remove brackets of buttons. E.g. display "show" instead of "[show]". */
+.mw-collapsible-toggle-default::before {content: "";}
+.mw-collapsible-toggle-default::after {content: "";}
+
+/* Main page. */
+div.mp-box {
+    border: 0.5px solid black !important; border-radius: 10px; margin-top: 10px !important;
+    margin-left: 10px !important;
+    padding: 10px !important;
+    background-color: #FFF !important;
+}
+.mp-h2 {border: none !important; border-radius: 3px; background-color: white !important;}
+
+.portalbox-entry {font-style: normal !important;}
+
+.quotebox cite {font-size: 85%; color: grey;}
+.quotebox p {margin: 0px;}
+
+/*
+#mw-panel-toc {display: none;}
+#vector-main-menu-container {width: 100px;}
+.mw-page-container-inner {column-gap: 0px; display: inline-block;}
+*/
+/*sup.reference a {
+  display: inline-block;
+  text-indent: -5px;
+  border-left: 5px solid yellow;
+  margin-left: 5px;
+}*/
+
+/*
+ * Remove reference numbers (e.g. [42]) and replace them with "†" sign.
+ */
+sup.reference a {font-size: 0; margin: 0px 1px;}
+sup.reference {vertical-align: 3px;} /* #3BC */
+sup.reference a::after {content: "†"; font-size: 12pt; vertical-align: -3px !important;}
+
+/* Remove some inline warnings. */
+sup.noprint {display: none;}
+
+img.mw-logo-tagline {display: none;}
+img.mw-logo-icon {display: none;}
+span.vector-menu-heading-label {display: none;}
+div.vector-body-before-content {display: none;}
+.cdx-search-input--has-end-button {border: none;}
+.cdx-text-input__input {border: none;}
+.vector-search-box-input {border: none; placeholder: "Search";}
+
+/* Cleanup footer. */
+#footer-info-copyright {display: none}
+#footer-icons {display: none;}
+#footer-info-lastmod {color: #AAA;}
+#footer-places a {color: #AAA;}
+.mw-footer {border-top: 1px solid #DDD;}
+
+.skin-vector-2022 #coordinates {position: relative; font-size: 0px;}
+
+/* Recolor. */
+.navbox-title {background: #E8EEFF !important;}
+td[style="background:#FFC000;"] {background: #F4F4CC !important;} /* Yellow. */
+td[style="background:#99FF8B;"] {background: #CCF4CC !important;} /* Green. */
+*[style="background:#C19A6B;"] {background: #E0E0D8 !important;}
+*[style="background:#C19A6B;"] {background: #E0E0D8 !important;}
+
+.legend-color {border-radius: 5px; border: 0.5px solid black !important;}
+
+ul.mw-contributions-list li {border: px solid #AAA; margin: 10px 0; display: flex;}
+ul li > span {border: px solid #AAA; display: inline-block;}
+ul li > a {border: px solid #AAA;}
+ul li span.mw-history-histlinks::before {content: "";}
+ul li span.mw-history-histlinks::after {content: "";}
+ul li a.mw-changeslist-date {display: inline-block; width: 180px;}
+ul li span.comment {display: inline-block; width: 450px; white-space: nowrap; overflow: hidden; margin-right: 10px; font-style: normal;}
+ul li span.comment::before {content: "";}
+ul li span.comment::after {content: "";}
+ul li span.history-user {display: inline-block; width: 150px; white-space: nowrap; overflow: hidden;}
+.history-size, .mw-diff-bytes, .mw-changeslist-date {font-size: }
+.history-size, .mw-changeslist-date {color: #888;}
+span.history-size {display: inline-block; width: 100px; text-align: right;}
+span.history-size::before {content: "";}
+span.history-size::after {content: "";}
+.mw-plusminus-neg {width: 50px;}
+.mw-plusminus-pos {width: 50px;}
+.mw-plusminus-null {width: 50px;}
+.mw-diff-bytes {display: inline-block; text-align: right; margin-right: 10px;}
+.mw-diff-bytes::before {content: "";}
+.mw-diff-bytes::after {content: "";}
+ul.mw-contributions-list li span.mw-changeslist-separator::before {content: "";}
+abbr.minoredit {display: none;}
+ul li span.mw-tag-markers {display: none;}
+ul li span.mw-usertoollinks {display: none;}
+.mw-changeslist-links::before {content: "";}
+.mw-changeslist-links::after {content: "";}
+
+.ombox {display: none;}

@@ -17,3 +17,6 @@ Directory `css` contains a set of CSS files that makes websites cleaner:
     web client even more minimalistic.
   - [`docs.python.org.css`](style/docs.python.org.css) makes
     [Python documentation](https://docs.python.org/3/) cleaner.
+  - [`en.wikipedia.org.css`](style/en.wikipedia.org.css) makes
+    [English Wikipedia](https://en.wikipedia.org/) more reader-friendly.
+
